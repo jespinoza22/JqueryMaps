@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+
+<html lang="es">
+
+<head>
+<title>Titulo de la web</title>
+<meta charset="utf-8" />
+<link rel="alternate" title="Pozolería RSS" type="application/rss+xml" href="/feed.rss" />
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
+<script type="text/javascript" src="ubigeo.js"></script>
+<script type="text/javascript" src="libreria.js"></script>
+<script async defer
+  src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAkff8qQbFMMe0p5tIzzIi3akC4B0u_DEg&callback=initMap">
+</script> 
+    <script type="text/javascript"></script>
+   
+    <script>
+        
+    </script> 
+    <style type="text/css">
+
+      .Nuevo{ 
+              height: 400px; 
+              width: 100%;
+              align-content: center;
+              border-color: blue;
+           }
+      .ClassDiv{
+              background-color: #AAA6A0;
+              height: 35px;
+              width: 100%
+      }
+      .Texto{
+              width: 70%;
+      }
+      .Boton{
+            width: 100px;
+            height: 30px;
+            border-radius: 8px;
+            background-color: #90908A;
+            color: white;
+            font-family: Arial;
+            font-size: 10pt;
+      }
+      select{
+            width: 200px;
+      }
+      label{
+            font-family: comic;
+            font-size: 12pt;
+      }
+      div.inline { float:left; }
+    </style>
+</head>
+
+<body>    
+    <div style="width: 100%" align="center"><input style="display: none;" id="direccion" type="text" class="Texto" placeholder=" Ingrese la direccion aqui..."></input></textbox></div><br/>
+      <div align="center">
+        <div class="inline"><span ><label>&nbsp;&nbsp;DEPARTAMENTO : &nbsp;&nbsp;</label></span></div>
+        <div class="inline"><span><select id="departamento" onchange="CambioDepartamento(1)"></select></span></div>
+      </div>
+      <div align="center">
+         <div class="inline"><span><label>&nbsp;&nbsp;PROVINCIA : &nbsp;&nbsp;</label></span></div>
+         <div class="inline"><span><select id="provincia" onchange="CambioProvincia(1)"></select></span></div>
+      </div>
+      <div align="center">
+        <div class="inline"><span><label>&nbsp;&nbsp;DISTRITO : &nbsp;&nbsp;</label></span></div>
+        <div class="inline"><span><select id="distrito" onchange="CambioDistrito(1)"></select></span></div>
+      </div><br>
+      <!-- 
+    <div style="wid:100%" align="center"><input style="display: none;" class="Boton" type="button" value="BUSCAR" //onclick="Buscar()"></input></div><br/>--><br>
+    <div style="height: 40px" align="center"><input type="button" value="GUARDAR DIRECCION" onclick="GuardarDireccion()"></div>
+    <div class="ClassDiv"></div>
+    <div style="width: 100%;height: 400px" align="center">
+      <div id="map" class="Nuevo"></div>
+    </div> 
+    <div class="ClassDiv"></div>   
+    <aside>
+    </aside>
+    <footer><br>
+        Creado por Junior Espinoza Lozano - 2017
+    </footer>
+</body>
+</html>
